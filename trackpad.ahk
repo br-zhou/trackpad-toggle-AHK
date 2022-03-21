@@ -5,7 +5,7 @@ IniRead, touchpadEnabled, settings.ini,Main,Touchpad
 if (touchpadEnabled = "ERROR") {
 Run % "SystemSettingsAdminFlows.exe EnableTouchPad 1"
 IniWrite, 1, settings.ini,Main,Touchpad
-IniRead, touchpadEnabled, settings.ini,Main,Touchpad
+touchpadEnabled := 1
 return
 }
 
